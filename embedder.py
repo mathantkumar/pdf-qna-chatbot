@@ -3,6 +3,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 import faiss
 import numpy as np
 
+# Load embedding model
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def chunk_text(text, chunk_size=500, chunk_overlap=50):
